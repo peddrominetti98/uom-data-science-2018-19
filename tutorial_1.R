@@ -14,6 +14,8 @@
 # 1. Install and load libraries ----
 
 # Installing R packages
+install.packages("skimr")
+library(skimr)
 install.packages("tidyverse")
 
 # Loading R packages
@@ -43,8 +45,8 @@ skimr::skim(raw_data)
 
 # Selecting columns 
 
-raw_data %>%
-  dplyr::select()
+selected_sata_1 <- raw_data %>%
+dplyr::select(Age)
 
 # Task:
 
